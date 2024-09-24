@@ -1,0 +1,174 @@
+.banner {
+  background: url("../../assets/images/img-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+.title {
+  text-align: center;
+  color: aliceblue;
+  font-size: 2.7rem;
+  letter-spacing: 0.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sub-heading {
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.btn-getStarted {
+  font-size: 1px;
+}
+.btn-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn--small {
+  padding: 13px;
+}
+.btn--outline {
+  margin-right: 10px;
+}
+.video-container {
+  display: flex;
+  /* justify-content: center; */
+
+  padding-top: 10%;
+  /* padding-left: -15%; */
+  position: absolute;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  justify-content: flex-start;
+  display: flex;
+}
+.img1 {
+  width: 19.8rem;
+  height: 12.9rem;
+  padding-top: 1%;
+}
+.card-containrer {
+  display: flex;
+  background-color: white;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.4);
+  width: 20rem;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 2%;
+  min-height: 15%;
+}
+.img1:hover {
+  transform: scale(1.01);
+}
+.head-2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.plan-type {
+  background-color: rgba(18, 157, 250, 0.856);
+  width: fit-content;
+  color: white;
+  position: absolute;
+  bottom: 10px; /* Adjust this to move the text where you want it */
+  left: 9px; /* Adjust this to move the text horizontally */
+  padding: 5px 10px; /* Adds some padding around the text */
+  font-size: 16px; /* Adjust this based on your preference */
+  z-index: 10; /* Ensures the text is above the image */
+}
+.image-container {
+  position: relative;
+  display: inline-block; /* Ensure the container size is the same as the image */
+}
+.card-cont-1 {
+}
+.desc-container {
+  padding: 2% 0% 5% 0%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+@media screen and (max-width: 360px) {
+  .btn--outline {
+    width: fit-content;
+    margin-right: 10px;
+  }
+  .btn--test {
+    width: fit-content;
+    margin-top: 10px;
+  }
+  .btn--small {
+    font-size: 14px;
+    padding: 4px 12px;
+  }
+  .btn-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .head-2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .img1 {
+    width: 13.8rem;
+    height: 7.9rem;
+    padding-top: 0.5%;
+    background: url("../../assets/images/img-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-containrer {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+      0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+    width: 14rem;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 2%;
+  }
+  .desc-container {
+    padding: 2% 0% 5% 0%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+  }
+  .plan-type {
+    background-color: rgba(18, 157, 250, 0.856);
+    width: fit-content;
+    color: white;
+    position: absolute;
+    bottom: 10px; /* Adjust this to move the text where you want it */
+    left: 9px; /* Adjust this to move the text horizontally */
+    padding: 3px 7px; /* Adds some padding around the text */
+    font-size: 12px; /* Adjust this based on your preference */
+    z-index: 10; /* Ensures the text is above the image */
+  }
+}
