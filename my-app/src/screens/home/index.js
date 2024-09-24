@@ -3,7 +3,6 @@ import Navbar from "../../components/navbar";
 import "./styles.css";
 import { Button } from "../../components/button";
 import { icons } from "../../assets/iconpath";
-import Img1 from "../../assets/images/img-1.jpg";
 const Home = () => {
   const [videoVisible, setVideoVisible] = useState(false);
   const cards = [
