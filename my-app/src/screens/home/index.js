@@ -41,7 +41,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div>
+      <div className="container">
         <div className="banner" alt="no img">
           <div className="title-container">
             <h1 className="title">ADVENTURE AWAITS</h1>

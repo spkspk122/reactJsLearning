@@ -56,8 +56,8 @@ video {
   display: flex;
 }
 .img1 {
-  width: 19.8rem;
-  height: 12.9rem;
+  width: 20rem;
+  height: 13rem;
   padding-top: 1%;
 }
 .card-containrer {
@@ -106,7 +106,7 @@ video {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   .btn--outline {
     width: fit-content;
     margin-right: 10px;
@@ -131,7 +131,7 @@ video {
     text-align: center;
   }
   .img1 {
-    width: 13.8rem;
+    width: 14rem;
     height: 7.9rem;
     padding-top: 0.5%;
     background: url("../../assets/images/img-1.jpg");
@@ -170,5 +170,12 @@ video {
     padding: 3px 7px; /* Adds some padding around the text */
     font-size: 12px; /* Adjust this based on your preference */
     z-index: 10; /* Ensures the text is above the image */
+  }
+  .banner {
+    background: url("../../assets/images/img-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
   }
 }

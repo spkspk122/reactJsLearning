@@ -81,7 +81,22 @@
   .NavbarItems {
     position: relative;
   }
-
+  .navbar {
+    background: linear-gradient(
+      90deg,
+      rgb(28, 27, 27) 0%,
+      rgb(26, 23, 23) 100%
+    );
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 29.8rem;
+  }
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -102,7 +117,7 @@
     z-index: 1;
     display: flex;
     justify-content: flex-start;
-    height: 48rem;
+    height: 65rem;
     width: 27.19rem;
   }
 
@@ -164,7 +179,22 @@
   .NavbarItems {
     position: relative;
   }
-
+  .navbar {
+    background: linear-gradient(
+      90deg,
+      rgb(28, 27, 27) 0%,
+      rgb(26, 23, 23) 100%
+    );
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 20rem;
+  }
   .nav-menu {
     display: flex;
     flex-direction: column;
