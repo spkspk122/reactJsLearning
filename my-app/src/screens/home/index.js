@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Navbar from "../../components/navbar";
-import "./styles.css";
-import { Button } from "../../components/button";
 import { icons } from "../../assets/iconpath";
+import { Button } from "../../components/button";
+import Navbar from "../../components/navbar";
+import "./styles.scss";
 const Home = () => {
   const [videoVisible, setVideoVisible] = useState(false);
   const cards = [
@@ -35,6 +35,81 @@ const Home = () => {
       text: "Adventure",
       desc: "Discover a new realm of flavor, where every dessert tells a delicious story of indulgence and adventure.",
       img: icons?.img5,
+    },
+  ];
+  const socialmedia = [
+    {
+      id: 1,
+      icon: icons?.twitter,
+      link: "https://twitter.com",
+    },
+    {
+      id: 2,
+      icon: icons?.faceBook,
+      link: "https://www.facebook.com/login/",
+    },
+    {
+      id: 3,
+      icon: icons?.insta,
+      link: "https://www.instagram.com/accounts/login/",
+    },
+    {
+      id: 4,
+      icon: icons?.github,
+      link: "https://github.com/",
+    },
+  ];
+  const footerData = [
+    {
+      category: "Company",
+      items: [
+        {
+          id: 1,
+          title: "About",
+        },
+        {
+          id: 2,
+          title: "Features",
+        },
+        {
+          id: 3,
+          title: "Works",
+        },
+      ],
+    },
+    {
+      category: "Help",
+      items: [
+        {
+          id: 1,
+          title: "Support Center",
+        },
+        {
+          id: 2,
+          title: "Customer Service",
+        },
+        {
+          id: 3,
+          title: "Contact Us",
+        },
+      ],
+    },
+    {
+      category: "FAQ",
+      items: [
+        {
+          id: 1,
+          title: "General Questions",
+        },
+        {
+          id: 2,
+          title: "Account Information",
+        },
+        {
+          id: 3,
+          title: "Technical Issues",
+        },
+      ],
     },
   ];
 
@@ -95,6 +170,65 @@ const Home = () => {
                 <div className="desc-container">
                   <text>{i?.desc}</text>
                 </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="footer-container">
+        <div className="footer-heading">
+          <text className="footer-txt">SHOP.CO</text>
+          <text className="footer-cls">
+            We have clothes that suits your style <br />
+            brand which you’re proud to wear. <br />
+            From women to men.
+          </text>
+          <div className="footer-socialmedia">
+            {socialmedia?.map((item, i) => (
+              <img
+                key={i}
+                src={item?.icon}
+                alt="no img"
+                className="footer-socialmedia-Img"
+                onClick={() => {
+                  window.location.href = item?.link;
+                }}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="footer-sub-container">
+          {footerData?.map((data, i) => (
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginRight: "10%",
+                marginLeft: "5%",
+              }}
+            >
+              <div
+                style={{
+                  flexDirection: "column",
+                  display: "flex",
+                }}
+              >
+                <text className="footer-sub-txt">{data?.category}</text>
+                {data?.items?.map((item, i) => {
+                  return (
+                    <>
+                      <text
+                        className="footer-sub-txt1"
+                        onClick={() => {
+                          window.location.href =
+                            "https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1CHBF_enIN999IN999&oq=goo&gs_lcrp=EgZjaHJvbWUqGAgBEC4YQxiDARjHARixAxjRAxiABBiKBTIGCAAQRRg5MhgIARAuGEMYgwEYxwEYsQMY0QMYgAQYigUyDAgCECMYJxiABBiKBTIMCAMQIxgnGIAEGIoFMhIIBBAAGEMYgwEYsQMYgAQYigUyBggFEEUYQTIGCAYQRRg8MgYIBxBFGDzSAQgxODc1ajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8";
+                        }}
+                      >
+                        {item?.title}
+                      </text>
+                    </>
+                  );
+                })}
               </div>
             </div>
           ))}

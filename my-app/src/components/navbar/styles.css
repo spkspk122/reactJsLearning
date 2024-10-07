@@ -95,7 +95,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    width: 29.8rem;
+    width: 29.9rem;
   }
   .nav-menu {
     display: flex;
@@ -118,7 +118,7 @@
     display: flex;
     justify-content: flex-start;
     height: 65rem;
-    width: 27.19rem;
+    width: 27.4rem;
   }
 
   .nav-links {
