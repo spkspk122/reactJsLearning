@@ -1,0 +1,145 @@
+@import "../../scss/variables";
+@import "../../scss/mixin";
+.custom_container {
+  position: relative;
+  &__img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  &__slogan {
+    font-size: $font-size;
+    text-align: center;
+    width: 52%;
+    font-weight: $font-weight900;
+  }
+  &__banner_txt_container {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  &__desc {
+    font-size: $font-size;
+    text-align: center;
+    width: 52%;
+  }
+  &__shopBtn {
+  }
+  &__btn_container {
+    align-items: start;
+    display: flex;
+    width: 50%;
+  }
+
+  &__main_quality_container {
+    display: flex;
+    width: 47%;
+  }
+  &__quality_container {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    padding-top: 3%;
+  }
+  &__200txt {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  &__brandtxt {
+    font-size: 12px;
+    color: lightslategray;
+  }
+  &__brand_container {
+  }
+  &__borderLine {
+    border-right: 9;
+    height: 35px;
+    background-color: rgb(146, 141, 141);
+    width: 0.5px;
+  }
+  &__quality_sub_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 150px;
+  }
+  &__brands_tag {
+    width: 100%;
+    background-color: black;
+    padding: 1%;
+    margin-top: 0%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+  }
+  &_brand_txt {
+    font-size: 18px;
+    color: white;
+    font-weight: 900;
+  }
+  &_brand_div {
+    display: flex;
+  }
+  @media screen and (max-width: 768px) {
+    &__slogan {
+      font-size: 0.6rem;
+      text-align: center;
+      width: 50%;
+      font-weight: $font-weight900;
+    }
+    &__main_quality_container {
+      grid-template-columns: repeat(
+        2,
+        1fr
+      ); // switch to 2 columns on smaller screens
+      grid-gap: 15px;
+      width: 95%;
+    }
+    &__quality_sub_container {
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+    }
+    &__banner_txt_container {
+      position: absolute;
+      top: 50%;
+      left: 27%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      flex-direction: column;
+    }
+    &__desc {
+      font-size: 0.6rem;
+      text-align: center;
+      width: 100%;
+    }
+    &__btn_container {
+      align-items: start;
+      display: flex;
+      width: 100%;
+    }
+    &__img {
+      min-height: 55vh; // Reduce the height for smaller screens
+    }
+    &__200txt {
+      font-size: 13px;
+      font-weight: 500;
+    }
+    &__brandtxt {
+      font-size: 8px;
+      color: lightslategray;
+    }
+  }
+}

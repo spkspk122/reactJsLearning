@@ -1,0 +1,15 @@
+export const Strings = {
+  logoName: "SHOP.CO",
+  shop: "Shop",
+  onSale: "On Sale",
+  newArrivals: "New Arrivals",
+  brands: "Brands",
+  action: "Action",
+  anotherAction: "Another action",
+  something: "Something else here",
+  slogan: "FIND CLOTHES THAT MATCHES YOUR STYLE",
+  txt1: "Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.",
+  shopNow: "Shop Now",
+  txt200: "200+",
+  brands: "International Brands",
+};

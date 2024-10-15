@@ -1,0 +1,28 @@
+.container {
+  &__btn_class {
+    width: 210px;
+    border-radius: 62px;
+    height: 52px;
+    margin-top: 5%;
+  }
+  @media screen and (max-width: 768px) {
+    &__btn_class {
+      width: 110px;
+      border-radius: 62px;
+      height: 23px;
+      padding: 0px 10px;
+      font-size: 0.8rem;
+      margin-top: 5%;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    &__btn_class {
+      width: 80px;
+      border-radius: 62px;
+      height: 18px;
+      padding: 0px 10px;
+      font-size: 0.7rem;
+      margin-top: 5%;
+    }
+  }
+}
