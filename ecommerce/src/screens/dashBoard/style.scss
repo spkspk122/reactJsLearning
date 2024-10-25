@@ -84,10 +84,31 @@
     font-size: 18px;
     color: white;
     font-weight: 900;
+    animation: marquee 10s linear infinite;
+    display: inline-block;
   }
   &_brand_div {
     display: flex;
   }
+  &__arravial_container {
+    display: flex;
+    justify-content: center;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  //arrivial css
+  &__arravial_title {
+    font-size: 38px;
+    font-weight: 700;
+    color: black;
+  }
+
   @media screen and (max-width: 768px) {
     &__slogan {
       font-size: 0.6rem;
@@ -132,6 +153,7 @@
     }
     &__img {
       min-height: 55vh; // Reduce the height for smaller screens
+      min-width: 70vh;
     }
     &__200txt {
       font-size: 13px;
@@ -140,6 +162,15 @@
     &__brandtxt {
       font-size: 8px;
       color: lightslategray;
+    }
+    &__brands_tag {
+      width: 112%;
+      background-color: black;
+      padding: 1%;
+      margin-top: 0%;
+      flex-direction: row;
+      display: flex;
+      justify-content: space-around;
     }
   }
 }

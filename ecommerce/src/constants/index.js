@@ -12,4 +12,6 @@ export const Strings = {
   shopNow: "Shop Now",
   txt200: "200+",
   brands: "International Brands",
+  //arrivial strings
+  newArrival: "NEW ARRIVALS",
 };

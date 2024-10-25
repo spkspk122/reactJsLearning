@@ -8,7 +8,8 @@ import { brandsData } from "../../constants/staticData";
 export default function DashBoard() {
   //images destructure
   const { banner } = icons;
-  const { slogan, txt1, shopNow, txt200, brands } = Strings;
+  //string destructure
+  const { slogan, txt1, shopNow, txt200, brands, newArrival } = Strings;
 
   return (
     <div className="custom_container">
@@ -66,6 +67,14 @@ export default function DashBoard() {
           </div>
         ))}
       </div>
+      <span className="custom_container__arravial_container">
+        <label className="custom_container__arravial_title">{newArrival}</label>
+        <div className="cusrtom_container__arravial_card_">
+          <div className="">
+            <img />
+          </div>
+        </div>
+      </span>
     </div>
   );
 }
