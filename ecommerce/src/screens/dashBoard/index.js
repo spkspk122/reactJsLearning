@@ -1,10 +1,11 @@
-import { useNavigate } from "react-router-dom";
-import "./style.scss";
-import NavBarLayout from "../../layouts/navbar";
+import { Box, Container, Grid, Link, Typography } from "@mui/material";
 import { icons } from "../../assets/images/iconpath";
-import { Strings } from "../../constants";
 import Button from "../../components/button";
-import { brandsData } from "../../constants/staticData";
+import ProductCard from "../../components/card/productCard";
+import { Strings } from "../../constants";
+import { brandsData, Procut } from "../../constants/staticData";
+import "./style.scss";
+
 export default function DashBoard() {
   //images destructure
   const { banner } = icons;
@@ -67,14 +68,63 @@ export default function DashBoard() {
           </div>
         ))}
       </div>
-      <span className="custom_container__arravial_container">
+      <div className="custom_container__arravial_container">
         <label className="custom_container__arravial_title">{newArrival}</label>
-        <div className="cusrtom_container__arravial_card_">
-          <div className="">
-            <img />
-          </div>
+        <div className="custom_container__arravial_card_container">
+      {Procut.map((item,i)=>{
+        return(
+          <ProductCard title={item?.title} productDesc={item?.productDesc} price={item?.price} priceType={item?.priceType} onlyLeft={item?.onlyLeft} image={item?.image}/>
+        )
+      })}
         </div>
-      </span>
+      </div>
+      <Box
+      sx={{
+        bgcolor: "black", // Background color
+        color: "white",
+        py: 3, // Padding (top & bottom)
+        mt: 4, // Margin top
+      }}
+    >
+      <Container maxWidth="lg">
+        <Grid container spacing={4}>
+          {/* Column 1 */}
+          <Grid item xs={12} sm={4}>
+            <Typography variant="h6" fontWeight="bold">
+              Company Name
+            </Typography>
+            <Typography variant="body2">© 2025 All Rights Reserved</Typography>
+          </Grid>
+
+          {/* Column 2 */}
+          <Grid item xs={12} sm={4}>
+            <Typography variant="h6" fontWeight="bold">
+              Quick Links
+            </Typography>
+            <Link href="#" color="inherit" underline="hover">
+              Home
+            </Link>
+            <br />
+            <Link href="#" color="inherit" underline="hover">
+              About Us
+            </Link>
+            <br />
+            <Link href="#" color="inherit" underline="hover">
+              Contact
+            </Link>
+          </Grid>
+
+          {/* Column 3 */}
+          <Grid item xs={12} sm={4}>
+            <Typography variant="h6" fontWeight="bold">
+              Contact Us
+            </Typography>
+            <Typography variant="body2">Email: support@example.com</Typography>
+            <Typography variant="body2">Phone: +1 234 567 890</Typography>
+          </Grid>
+        </Grid>
+      </Container>
+    </Box>
     </div>
   );
 }
